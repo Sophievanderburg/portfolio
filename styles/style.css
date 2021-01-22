@@ -302,14 +302,10 @@ footer{
     }
     
     main section:last-of-type ul{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    
-    main section:last-of-type ul li{
-        width: 27%;
-    }
+        
     
     /*about me*/
     main section:nth-of-type(3){
@@ -415,6 +411,14 @@ footer{
     grid-row: 2/4;
     width: 75%;
     justify-self: end;
+    }
+    
+    main section:last-of-type ul{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    main section:last-of-type ul li{
+    justify-self: center;
     }
 }
 
