@@ -16,6 +16,7 @@ header{
 header div h1{
     font-size: 1.5em;
     text-align: center;
+    font-family: linotype-didot, serif;
 }
 
 header nav ul{
@@ -27,16 +28,63 @@ header nav ul{
 
 header nav ul li a{
     text-decoration: none;
+    font-family: linotype-didot, serif;
+    font-size: 1.35em;
 }
 
-header nav ul li a.active{
-    font-weight:bolder;
-    text-decoration: underline;
-    color: #608c96;
+
+
+
+
+
+/*------------------------------- header  responsive —————————————   */
+@media (min-width:515px){
+	header div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+	}
+	
+	header div h1:first-of-type{
+        margin-right: 0.25em;
+	}
 }
 
-header nav ul li a.active:hover{
-    text-decoration: none;
+
+@media (min-width:830px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header div{
+        width: 70%;
+        justify-content: flex-start;
+    }
+    
+    header div h1{
+        font-size:2em ;    
+    }
+
+    header nav{
+        width: 30%;
+    }
+    
+    header nav li:hover a{
+        text-decoration: underline;
+        color:#608c96;
+    }
+    
+}
+
+@media (min-width:1150px){
+    header div h1{
+    font-size: 3em;
+    }
+    
+    header nav ul li a{
+    font-size: 1.6em;
+    }
 }
 
 /*------------------------------- main ----------------------------- */
@@ -136,42 +184,7 @@ footer{
 
 
 /*-------------------------------------   responsive ---------------------------------------   */
-@media (min-width:515px){
-	header div{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-	}
-	
-	header div h1:first-of-type{
-        margin-right: 0.25em;
-	}
-}
-
-
 @media (min-width:830px){
-    header{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    header div{
-        width: 70%;
-        justify-content: flex-start;
-    }
-    
-    header div h1{
-        font-size:2em ;    
-    }
-
-    header nav{
-        width: 30%;
-    }
-    
-    header nav li:hover a{
-        text-decoration: underline;
-    }
-    
     main{
         padding: 0 20%; 
     }
