@@ -16,11 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-main{
-    max-width: 110em;
-    margin: 0 auto;
-}
-
 /*------------------------------- header -------------------------- */
 header{
     padding: 1em;
@@ -109,7 +104,8 @@ section{
 }
 
 section:first-of-type{
-    margin-top: 0;
+    margin: 0 auto 3em auto;
+    max-width: 100em;
 }
 
 section:last-of-type {

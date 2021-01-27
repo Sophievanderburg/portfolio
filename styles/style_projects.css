@@ -92,6 +92,21 @@ main{
     padding: 1em;
 }
 
+main div.video {
+    position: relative;
+    padding-bottom: 160%;
+}
+
+main div.video iframe{
+    width: 17em;
+    height: 9.5em;
+}
+
+main div.video p{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 main > a {
     background-color: #2d2d2d;
     color: white;
@@ -184,6 +199,21 @@ footer{
 
 
 /*-------------------------------------   responsive ---------------------------------------   */
+@media (min-width:490px){
+    main div.video iframe{
+        width: 26em;
+        height: 15em;
+    }
+}
+
+@media (min-width:610px){
+    main div.video iframe{
+        width: 34em;
+        height: 19em;
+    }
+}
+
+
 @media (min-width:830px){
     main{
         padding: 0 20%; 
@@ -215,4 +245,26 @@ footer{
     }
     
     
+}
+
+@media (min-width:1100px){
+    main div.video iframe{
+        width: 39em;
+        height: 22em;
+    }
+}
+
+@media (min-width:1300px){
+    main div.video iframe{
+        width: 47em;
+        height: 27em;
+    }
+}
+
+
+@media (min-width:1500px){
+    main div.video iframe{
+        width: 57em;
+        height: 32em;
+    }
 }
