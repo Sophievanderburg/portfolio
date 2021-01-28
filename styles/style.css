@@ -304,6 +304,8 @@ footer{
     main section:last-of-type ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        width: 80vw;
     }
         
     
@@ -414,7 +416,9 @@ footer{
     }
     
     main section:last-of-type ul{
-    grid-template-columns: 1fr 1fr 1fr;
+        width: 60vw;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
     }
     
     main section:last-of-type ul li{
